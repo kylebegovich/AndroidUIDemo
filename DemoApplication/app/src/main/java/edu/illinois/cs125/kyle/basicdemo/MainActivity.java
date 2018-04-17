@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
@@ -38,6 +40,16 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(String.valueOf(counter));
     }
 
+    protected void decrement(View view) {
+        counter --;
+        textView.setText(String.valueOf(counter));
+    }
+
+    protected void randomNumber(View view) {
+        counter = (int) ((Math.random() - 0.5) * Integer.MAX_VALUE);
+        textView.setText(String.valueOf(counter));
+    }
+
 
     /*
     Using Logcat, from developer.android.com:
@@ -48,7 +60,5 @@ public class MainActivity extends AppCompatActivity {
     The order in terms of verbosity, from most to least is VERBOSE, DEBUG, INFO, WARN, ERROR.
     Verbose should never be compiled into an application except during development.
     Debug logs are compiled in but stripped at runtime. Error, warning and info logs are always kept.
-
-
      */
 }
