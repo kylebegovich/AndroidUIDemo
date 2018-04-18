@@ -13,6 +13,7 @@ Very basic overview of using the Design tool for UI and connecting some basic li
 
 Where I will init an application during lecture to demonstrate how quick it is to get things working, at least at a
 basic level
+Sorry that there's a 2 at the end, I forgot to remove the old one from the dry run and it automatically got renamed...
 
 ### ToolkitApplication
 
